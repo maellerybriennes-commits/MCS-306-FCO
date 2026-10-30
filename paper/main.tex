@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{csquotes}
+\usepackage[style=apa,backend=biber]{biblatex}
+\DeclareLanguageMapping{american}{american-apa}
+\addbibresource{references.bib}
+
+\title{Working Title for the Mini-Research Paper}
+\author{Author Name(s)}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{Title}
+State the final research title clearly and concisely.
+
+\section*{Abstract}
+Provide a concise summary of the research motivation, methods, findings, and conclusions.
+
+\section{Introduction}
+Introduce the problem context, motivation, and key research objectives.
+
+\section{Preliminaries}
+Define core concepts, notation, assumptions, and any prerequisite background.
+
+\section{Methods and Applications}
+
+\subsection{Model or Method Description}
+Describe the mathematical model or algorithm. Include key equations such as:
+\[
+\frac{dN}{dt} = rN\left(1 - \frac{N}{K}\right)
+\]
+
+\subsection{Implementation and Code}
+Explain the implementation choices, software structure, and reproducibility details.
+
+\subsection{Results and Visualization}
+Summarize generated tables/plots and describe how results are presented.
+
+\subsection{Analysis and Discussion}
+Interpret findings, discuss limitations, and compare outcomes with expectations.
+
+\section{Conclusion}
+Summarize the main contributions and list possible next steps.
+
+\section*{References}
+\printbibliography[heading=none]
+
+\end{document}
